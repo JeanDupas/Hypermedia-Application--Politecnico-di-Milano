@@ -1,0 +1,26 @@
+<div class="row">
+  <h2 class="col-md-10 paragraph-title">TV and Smart Living</h2>
+</div>
+<div class="row paragraph-container">
+  <div>
+    <div ng-repeat="device in devices">
+      <div class="col-md-4 device">
+          <div class="col-xs-12">
+            <img ng-src="img/{{device.src}}" class="img-responsive center img-max-300" alt={{device.alt}}>
+          </div>
+          <h2 class="center">
+            {{device.constructor}}
+          </h2>
+          <h3 class="center paragraph">
+            {{device.name}}
+          </h3>
+          <h3 class="center">
+            {{device.price}} €
+          </h3>
+          <div class="center paragraph">
+            <a href="#/devices/tvandsmartliving/{{device.idSLiving}}/presentation"><button class="big-button"> Info </button></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

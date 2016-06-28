@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-2">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Assistance</h2>
+      <h3 class="col-md-12 paragraph">Costs and Payments</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="#/assistance/costsandpayments/{{assistance.idAssistance}}/description">Description</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation" class="active"><a href="#/assistance/costsandpayments/{{assistance.idAssistance}}/fordevice">For device</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10">
+    <h3 class="center paragraph"> {{assistance.name}} </h3>
+    <div class="col-md-12 paragraph paragraph-subtitle center">For Devices</div>
+    <div ng-repeat="device in devices">
+      <div class="col-md-4 device">
+        <div class="col-xs-12">
+          <img ng-src="img/{{device.src}}" class="img-responsive center img-max-300" alt={{device.alt}}>
+        </div>
+        <h2 class="center">
+          {{device.constructor}}
+        </h2>
+        <h3 class="center paragraph">
+          {{device.name}}
+        </h3>
+        <div class="center paragraph">
+          <a href="#/devices/phones/{{device.idDevice}}/presentation">
+            <button class="big-button">Info </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

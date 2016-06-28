@@ -1,0 +1,47 @@
+<div class="row">
+  <h2 class="col-md-10 paragraph-title">All Devices</h2>
+</div>
+<div class="row paragraph-container">
+  <h3 class="col-md-12 paragraph-title">Phones</h3>
+    <div ng-repeat="phone in phones">
+      <div class="col-md-4 device">
+          <div class="col-xs-12">
+            <img ng-src="img/{{phone.src}}" class="img-responsive center img-max-300" alt={{phone.alt}}>
+          </div>
+          <h2 class="center">
+            {{phone.constructor}}
+          </h2>
+          <h3 class="center paragraph">
+            {{phone.name}}
+          </h3>
+          <h3 class="center">
+            {{phone.price}} €
+          </h3>
+          <div class="center paragraph">
+            <a href="#/devices/phones/{{phone.idPhone}}/presentation"><button class="big-button"> Info </button></a>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="row paragraph-container">
+  <h3 class="col-md-12 paragraph-title">Smart Living and TV</h3>
+    <div ng-repeat="SL in SLiving">
+      <div class="col-md-4 device">
+          <div class="col-xs-12">
+            <img ng-src="img/{{SL.src}}" class="img-responsive center img-max-300" alt={{SL.alt}}>
+          </div>
+          <h2 class="center">
+            {{SL.constructor}}
+          </h2>
+          <h3 class="center paragraph">
+            {{SL.name}}
+          </h3>
+          <h3 class="center">
+            {{SL.price}} €
+          </h3>
+          <div class="center paragraph">
+            <a href="#/devices/tvandsmartliving/{{SL.idSLiving}}/presentation"><button class="big-button"> Info </button></a>
+          </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Smart Life Services</h2>
+      <h3 class="col-md-12 paragraph">Personal Services</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation" class="active"><a href="#/smartlife/personalservices/{{service.idSLService}}/description">Description</a></li>
+      <li role="presentation"><a href="#/smartlife/personalservices/{{service.idSLService}}/activation">Activation and Rules</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation"><a href="#/smartlife/personalservices/{{service.idSLService}}/fordevice">For device</a></li>
+    </ul>
+  </div>
+  <div class="col-md-9 device">
+    <div class="col-xs-12">
+      <h2 class="center paragraph">
+        {{service.name}}
+      </h2>
+      <div class="col-xs-12 paragraph">
+        <img ng-src="img/{{service.src}}" class="img-responsive center img-max-300" alt={{phone.alt}}>
+      </div>
+      <div class="col-md-12 paragraph center">
+        <a href="#/smartlife/personalservices/{{service.idSLService}}/subscribe">
+          <button class="big-button"> Subscribe </button>
+        </a>
+      </div>
+      <div class="col-md-12 paragraph-subtitle center">Description</div>
+      <div ng-bind-html="service.description" class="col-md-12 paragraph"></div>
+      <div class="col-md-12 paragraph center">
+        <a href="#/smartlife/personalservices/">
+          <button class="big-button"> Back to Personal Services </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

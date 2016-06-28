@@ -1,0 +1,49 @@
+<div class="row">
+  <h2 class="col-md-12 paragraph-title">Promotions</h2>
+</div>
+<div class="row paragraph-container">
+    <div ng-repeat="phone in phonePromotion">
+      <div class="col-md-4 device">
+          <div class="col-xs-12">
+            <img ng-src="img/{{phone.src}}" class="img-responsive center img-max-300" alt={{phone.alt}}>
+          </div>
+          <h2 class="center">
+            {{phone.constructor}}
+          </h2>
+          <h3 class="center paragraph">
+            {{phone.name}}
+          </h3>
+          <h3 class="center">
+            Basic Price : {{phone.price}} €
+          </h3>
+          <h3 class="center">
+            New Price : {{phone.price - (phone.price * phone.percentage / 100)}} € (- {{phone.percentage}} %)
+          </h3>
+          <div class="center paragraph">
+            <a href="#/devices/phones/{{phone.idPhone}}/presentation"><button class="big-button">Buy </button></a>
+          </div>
+        </div>
+    </div>
+    <div ng-repeat="sliving in slivingPromotion">
+      <div class="col-md-4 device">
+          <div class="col-xs-12">
+            <img ng-src="img/{{sliving.src}}" class="img-responsive center img-max-300" alt={{sliving.alt}}>
+          </div>
+          <h2 class="center">
+            {{sliving.constructor}}
+          </h2>
+          <h3 class="center paragraph">
+            {{sliving.name}}
+          </h3>
+          <h3 class="center">
+            Basic Price : {{sliving.price}} €
+          </h3>
+          <h3 class="center">
+            New Price : {{sliving.price - (sliving.price * sliving.percentage / 100)}} € (- {{sliving.percentage}} %)
+          </h3>
+          <div class="center paragraph">
+            <a href="#/devices/tvandsmartliving/{{sliving.idDevice}}/presentation"><button class="big-button">Buy </button></a>
+          </div>
+        </div>
+    </div>
+</div>

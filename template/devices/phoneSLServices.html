@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-2">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Devices</h2>
+      <h3 class="col-md-12 paragraph">Phones</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="#/devices/phones/{{phone.idDevice}}/presentation">Presentation</a></li>
+      <li role="presentation"><a href="#/devices/phones/{{phone.idDevice}}/characteristics">Technical Characteristics</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation" class="active"><a href="#/devices/phones/{{phone.idDevice}}/smartlife">Smart Life Services</a></li>
+      <li role="presentation"><a href="#/devices/phones/{{phone.idDevice}}/assistance">Assistance</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10 paragraph-container">
+    <div class="col-md-12 paragraph-subtitle center">{{phone.constructor}} {{phone.name}}</div>
+    <div class="col-md-12 paragraph paragraph-subtitle center">Smart Life Services</div>
+    <div ng-repeat="service in services">
+      <div class="col-md-4 service">
+        <div class="col-xs-12 paragraph">
+          <img ng-src="img/{{service.src}}" class="img-responsive center img-max-300" alt={{service.alt}}>
+        </div>
+        <h2 class="center">
+          {{service.name}}
+        </h2>
+        <p class="center paragraph">
+          {{service.short}}
+        </p>
+        <div class="center paragraph">
+          <span ng-switch="service.category">
+            <span ng-switch-when="PE">
+              <a href="#/smartlife/personalservices/{{service.idSLService}}/description">
+                <button class="big-button"> About </button>
+              </a>
+            </span>
+            <span ng-switch-when="HE">
+              <a href="#/smartlife/healthandwellness/{{service.idSLService}}/description">
+                <button class="big-button"> About </button>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-offset-2 col-md-10 back-button paragraph center">
+    <a href="#/devices/phones/">
+      <button class="big-button"> Back to Phones </button>
+    </a>
+  </div>
+</div>

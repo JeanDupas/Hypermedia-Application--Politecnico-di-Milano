@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-2">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Assistance</h2>
+      <h3 class="col-md-12 paragraph">Costs and Payments</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation" class="active"><a href="#/assistance/costsandpayments/{{assistance.idAssistance}}/description">Description</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation"><a href="#/assistance/costsandpayments/{{assistance.idAssistance}}/fordevice">For device</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10 device">
+    <div class="col-xs-12">
+      <h3 class="center paragraph"> {{assistance.name}} </h3>
+      <div class="col-md-12 paragraph paragraph-subtitle center">Description</div>
+      <div ng-bind-html="assistance.description" class="col-md-12 paragraph"></div>
+      <div class="col-md-12 paragraph center">
+        <a href="#/assistance/costsandpayments/">
+          <button class="big-button"> Back to Costs and Payments</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

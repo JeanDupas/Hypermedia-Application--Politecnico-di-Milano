@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Smart Life Services</h2>
+      <h3 class="col-md-12 paragraph">Personal Services</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="#/smartlife/personalservices/{{service.idSLService}}/description">Description</a></li>
+      <li role="presentation"><a href="#/smartlife/personalservices/{{service.idSLService}}/activation">Activation and Rules</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation" class="active"><a href="#/smartlife/personalservices/{{service.idSLService}}/fordevice">For device</a></li>
+    </ul>
+  </div>
+  <div class="col-md-9">
+    <div class="col-md-12 paragraph paragraph-subtitle center">
+      <h2> {{service.name}} </h2>
+      <h3>For Devices</h3>
+    </div>
+    <div ng-repeat="phone in phones">
+      <div class="col-md-4 device">
+        <div class="col-xs-12">
+          <img ng-src="img/{{phone.src}}" class="img-responsive center img-max-300" alt={{phone.alt}}>
+        </div>
+        <h2 class="center">
+          {{phone.constructor}}
+        </h2>
+        <h3 class="center paragraph">
+          {{phone.name}}
+        </h3>
+        <div class="center paragraph">
+          <a href="#/devices/phones/{{phone.idPhone}}/presentation">
+            <button class="big-button">Info </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div ng-repeat="sliving in slivings">
+      <div class="col-md-4 device">
+        <div class="col-xs-12">
+          <img ng-src="img/{{sliving.src}}" class="img-responsive center img-max-300" alt={{sliving.alt}}>
+        </div>
+        <h2 class="center">
+          {{sliving.constructor}}
+        </h2>
+        <h3 class="center paragraph">
+          {{sliving.name}}
+        </h3>
+        <div class="center paragraph">
+          <a href="#/devices/tvandsmartliving/{{sliving.idDevice}}/presentation">
+            <button class="big-button">Info </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 paragraph center">
+      <a href="#/smartlife/personalservices/">
+        <button class="big-button"> Back to Personal Services </button>
+      </a>
+    </div>
+  </div>
+</div>

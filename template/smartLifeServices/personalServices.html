@@ -1,0 +1,22 @@
+<div class="row">
+  <h2 class="col-md-12 paragraph-title">Smart Life Services</h2>
+  <h3 class="col-md-12 paragraph">Personal Services</h3>
+</div>
+<div>
+  <div ng-repeat="service in services">
+    <div class="col-md-4 service">
+        <div class="col-xs-12 paragraph">
+          <img ng-src="img/{{service.src}}" class="img-responsive center img-max-300" alt={{phone.alt}}>
+        </div>
+        <h2 class="center">
+          {{service.name}}
+        </h2>
+        <p class="center paragraph">
+          {{service.short}}
+        </p>
+        <div class="center paragraph">
+          <a href="#/smartlife/personalservices/{{service.idSLService}}/description"><button class="big-button"> About </button></a>
+        </div>
+      </div>
+  </div>
+</div>

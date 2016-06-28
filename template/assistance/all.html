@@ -1,0 +1,61 @@
+<div class="row">
+  <h2 class="col-md-12 paragraph-title">Assistance</h2>
+</div>
+<div class="row">
+  <h3 class="col-md-12 paragraph">Costs and Payments</h3>
+  <div class="col-md-6">
+    <h3> What you can do online </h3>
+    <p><b>MyTIM Mobile</b>
+      <br/> MyTIM Mobile (line management)
+      <br/> Access MyTIM Mobile sim inserted into alarm
+      <br/>
+      <b>Online recharge</b>
+      <br/> Fast charging
+      <br/> How does the service Passepartout TIM
+      <br/>
+      <b>Online shopping</b>
+      <br/> Purchasing and shipping times
+      <br/> Learn how to get the invoice of your purchases
+      <br/>
+    </p>
+  </div>
+  <div class="col-md-6">
+    <h3> Mobile phone </h3>
+    <p> <b>Rechargeable</b>
+      <br/>
+      <span ng-repeat="assistance in assistances">
+        <a href="#/assistance/costsandpayments/{{assistance.idAssistance}}/description">{{assistance.name}}</a>
+        <br/>
+      </span>
+      <b>Subscription</b>
+      <br/> Learn how to check the consumption of the line with your subscription
+      <br/>
+      <b>To surf the Internet</b>
+      <br/> Basic fee to navigate from Smartphone, PC and Tablet
+      <br/> Protection threshold and data traffic block
+      <br/>
+      <b>Installments Offers</b>
+      <br/> Installment plans: the disclosure and the early withdrawal SMS
+      <br/> Change credit card installments deals Rechargeable
+      <br/>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <h3 class="col-md-12 paragraph">Line Management</h3>
+  <div class="col-md-6">
+    <p> <b>Sim Management</b>
+      <br/> All about your Sim
+      <br/> Transition from a subscription Rechargeable
+      <br/>
+      <b>Activate and desactivate services to content (CSP) and telephone services</b>
+      <br/> Value added services SMS / MMS / Internet
+      <br/> LoSai and ChiamaOra TIM
+      <br/>
+      <b>Management of the mobile line when you're abroad</b>
+      <br/> Abroad with TIM
+      <br/> Check the remaining credit while abroad
+      <br/>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-2">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Devices</h2>
+      <h3 class="col-md-12 paragraph">Phones</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation" class="active"><a href="#/devices/phones/{{phone.idPhone}}/presentation">Presentation</a></li>
+      <li role="presentation"><a href="#/devices/phones/{{phone.idPhone}}/characteristics">Technical Characteristics</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation"><a href="#/devices/phones/{{phone.idPhone}}/smartlife">Smart Life Services</a></li>
+      <li role="presentation"><a href="#/devices/phones/{{phone.idPhone}}/assistance">Assistance</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10 paragraph-container">
+    <div class="col-md-4">
+      <img ng-src="img/{{phone.src}}" class="img-responsive center img-max-300" alt={{phone.alt}}>
+      <h3 class="center paragraph paragraph-subtitle">
+        {{phone.price}} €
+      </h3>
+      <div class="center paragraph">
+        <a href="#/devices/phones/{{phone.idPhone}}/buy">
+          <button class="big-button"> Buy </button>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="col-md-12 paragraph-subtitle center">{{phone.constructor}} {{phone.name}}</div>
+      <div class="col-md-12 paragraph paragraph-subtitle center">Presentation</div>
+      <div class="col-md-12">
+        <p>{{phone.description}}</p>
+      </div>
+      <table class="col-md-12 presentation-table center">
+        <tr>
+          <td class="presentation-table-td">OS</td>
+          <td>{{phone.os}}</td>
+        </tr>
+        <tr>
+          <td>Talk Time</td>
+          <td>{{phone.talkTime}}</td>
+        </tr>
+        <tr>
+          <td class="presentation-table-td">Internal Memory</td>
+          <td>{{phone.internalMemory}} GB</td>
+        </tr>
+        <tr>
+          <td>Dimensions</td>
+          <td>{{phone.phoneHeight}} x {{phone.phoneWidth}} x {{phone.phoneDepth}} mm</td>
+        </tr>
+        <tr>
+          <td class="presentation-table-td">Screen Size</td>
+          <td>{{phone.screenSize}} inches</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="col-md-offset-2 col-md-10 back-button paragraph center">
+  <a href="#/devices/phones/">
+    <button class="big-button"> Back to Phones </button>
+  </a>
+</div>

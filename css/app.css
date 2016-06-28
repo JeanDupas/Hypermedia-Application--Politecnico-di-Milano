@@ -1,0 +1,146 @@
+/* app css stylesheet */
+
+.nav> li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.center {
+  margin: auto;
+  text-align: center;
+}
+.menu {
+  font-size: 160%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+body {
+  padding-top: 50px;
+}
+.img-top {
+  margin-top: 10px;
+  max-height: 30px;
+}
+.navbar-fixed-top {
+  max-height: 40px;
+  box-shadow: 1px 1px 10px grey;
+}
+p {
+  font-size: 130%;
+}
+.former-price {
+  text-decoration: line-through;
+}
+.small-text {
+  font-size: 70%;
+}
+.align-right {
+  text-align: right;
+}
+q {
+  font-size: 170%;
+  color: #236BB2;
+  font-style: oblique;
+}
+.presentation-table {
+  font-size: 150%;
+  margin-top: 30px;
+  border: 1px black solid;
+}
+.presentation-table tr {
+  min-height: 300px;
+}
+.presentation-table-td {
+  background-color: #236BB2;
+  color: white;
+}
+.categories-a:hover {
+  background-color: #2F5997;
+  color: white;
+}
+.underline {
+  text-decoration: underline;
+}
+.article {
+  border: 1px solid;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.device {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.paragraph-container {
+  margin-top: 50px;
+}
+.service {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.paragraph {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.article-title {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.nav-stacked {
+  margin-top: 30px;
+  font-size: 140%;
+}
+.img-max-300 {
+  max-height: 300px;
+}
+.img-categories {
+  max-height: 200px;
+}
+.paragraph-title {
+  font-size: 250%;
+}
+.paragraph-subtitle {
+  font-size: 200%;
+}
+.divider {
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.big-button {
+  background-color: #236BB2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.inputText {
+  max-width: 400px;
+}
+.footer {
+  background-color: #236BB2;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+.footer-text {
+  color: white;
+}
+.footer-text:hover {
+  color: white;
+}
+.footer-text:visited {
+  color: white;
+}
+.back-button {
+  margin-top: 30px;
+}

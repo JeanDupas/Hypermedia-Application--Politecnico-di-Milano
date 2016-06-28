@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-2">
+    <div class="row">
+      <h2 class="col-md-12 paragraph-title">Devices</h2>
+      <h3 class="col-md-12 paragraph">TV and Smart Living</h3>
+    </div>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="#/devices/tvandsmartliving/{{device.idDevice}}/presentation">Presentation</a></li>
+      <li role="presentation"><a href="#/devices/tvandsmartliving/{{device.idDevice}}/characteristics">Technical Characteristics</a></li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation"><a href="#/devices/tvandsmartliving/{{device.idDevice}}/smartlife">Smart Life Services</a></li>
+      <li role="presentation" class="active"><a href="#/devices/tvandsmartliving/{{device.idDevice}}/assistance">Assistance</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10 paragraph-container">
+    <div class="col-md-12 paragraph-subtitle center">Assistance</div>
+    <span ng-repeat="assistance in assistances">
+      <a href="#/assistance/costsandpayments/{{assistance.idAssistance}}/description">{{assistance.name}}</a>
+      <br/>
+    </span>
+    </p>
+  </div>
+  <div class="col-md-offset-2 col-md-10 back-button paragraph center">
+    <a href="#/devices/tvandsmartliving/">
+      <button class="big-button"> Back to TV and Smart Living </button>
+    </a>
+  </div>
+</div>
