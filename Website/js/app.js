@@ -27,7 +27,7 @@ var app = {
 
 // Declare app level module which depends on views, and components
 var appTIM = angular.module('appTIM', [
-  'ngRoute', 'ngTouch', 'ngAnimate', 'ui.bootstrap'
+  'ngRoute', 'ngTouch', 'ngAnimate', 'ui.bootstrap', 'ngSanitize'
 ]);
 
 appTIM.controller('costsAndPaymentsCtrl', function($scope, $http) {
