@@ -33,7 +33,7 @@ var appTIM = angular.module('appTIM', [
 appTIM.controller('costsAndPaymentsCtrl', function($scope, $http) {
   $http({
     method: 'POST',
-    url: 'http://dupaspolimi.altervista.org/http://dupaspolimi.altervista.org/php/getAssistanceByCategory.php',
+    url: 'http://dupaspolimi.altervista.org/php/getAssistanceByCategory.php',
     data: {
       category: 'CP'
     },
