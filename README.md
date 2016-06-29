@@ -1,4 +1,4 @@
-# test
+# TIM Website
 This website is made for the course Hypermedia and Application at Politecnico di Milano.
 
 # Technology
@@ -8,3 +8,6 @@ This website is made for the course Hypermedia and Application at Politecnico di
 * Bootstrap
 * PHP
 * MySQL
+
+# Demo
+http://dupaspolimi.altervista.org/#/
