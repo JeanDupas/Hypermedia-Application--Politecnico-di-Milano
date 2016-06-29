@@ -1,4 +1,4 @@
-# test
+# TIM Website
 This website is made for the course Hypermedia and Application at Politecnico di Milano.
 
 # Technology
