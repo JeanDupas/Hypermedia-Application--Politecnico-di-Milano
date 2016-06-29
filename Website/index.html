@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="appTIM" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" />
+  <title>TIM</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="app container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="col-md-10 col-md-offset-2">
+        <a href="#/"><img src="img/logo.png" class="img-responsive img-top" alt="Responsive image"></a>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="img/banner_blue.png" class="img-responsive center" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 menu">
+        <nav class="navbar navbar-default" ng-controller="NavBarCtrl">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" uib-collapse="isCollapsed">
+              <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li class="dropdown" uib-dropdown on-toggle="toggled(open)">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" uib-dropdown-toggle>Devices <span class="caret"></span></a>
+                  <ul class="dropdown-menu" uib-dropdown-menu>
+                    <li><a href="#/devices/all">All Devices</a></li>
+                    <li><a href="#/devices/categories">Devices Categories</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown" uib-dropdown on-toggle="toggled(open)">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" uib-dropdown-toggle>Smart Life Services <span class="caret"></span></a>
+                  <ul class="dropdown-menu" uib-dropdown-menu>
+                    <li><a href="#/smartlife/all">All Smart Life Services</a></li>
+                    <li><a href="#/smartlife/categories">Smart Life Services Categories</a></li>
+                  </ul>
+                </li>
+                <li><a href="#/promotions">Promotions</a></li>
+                <li class="dropdown" uib-dropdown on-toggle="toggled(open)">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" uib-dropdown-toggle>Assistance <span class="caret"></span></a>
+                  <ul class="dropdown-menu" uib-dropdown-menu>
+                    <li><a href="#/assistance/all">All Assistance Services</a></li>
+                    <li><a href="#/assistance/hightlights">Hightlights</a></li>
+                    <li><a href="#/assistance/categories">Assistance Categories</a></li>
+                  </ul>
+                </li>
+                <li><a ng-href="#/whoweare/innovation">Who we are</a></li>
+                <li><a href="#/thegroup/description">The Group</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+      <!-- /.menu -->
+
+      <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+      <div class="col-md-8 col-md-offset-2">
+        <div ng-view></div>
+      </div>
+      <!-- /.view -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="col-xs-4 center">
+        <p><a class="footer-text" href="#/contact">Contact</a></p>
+      </div>
+      <div class="col-xs-4 center">
+        <p class="footer-text">Website Info</p>
+      </div>
+      <div class="col-xs-4 center">
+        <p class="footer-text">Copyright</p>
+      </div>
+      </p>
+    </div>
+  </footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/angular-touch.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
+  <script src="js/ui-bootstrap-tpls.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controller/devicesController.js"></script>
+  <script src="js/controller/smartLifeController.js"></script>
+
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+</body>
+
+</html>
